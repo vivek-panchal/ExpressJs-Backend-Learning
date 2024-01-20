@@ -102,11 +102,11 @@ exports.login = async (req,res) => {
                 httpOnly:true,
             }
 
-            res.cookie("babbarCookie", token, options).status(200).json({
+            res.cookie("vivekCookie", token, options).status(200).json({
                 success:true,
                 token,
                 user,
-                message:'User Logged in successfully',
+                message:'User Logged in successfully', 
             });
         }
         else {

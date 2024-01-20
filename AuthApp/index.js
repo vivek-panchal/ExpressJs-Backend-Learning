@@ -6,6 +6,9 @@ const PORT = process.env.PORT || 4000;
 
 //cookie-parser - what is this and why we need this ?
 
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
+
 app.use(express.json());
 
 require("./config/database").connect();
